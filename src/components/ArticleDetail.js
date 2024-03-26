@@ -11,6 +11,7 @@ function ArticleDetail() {
     const [error, setError] = useState('');
   
     useEffect(() => {
+      //Fetch to get images
       fetch(`https://aialpha.ngrok.io/api/get/article?article_id=${articleId}`)
         .then((response) => {
           if (!response.ok) {
@@ -42,7 +43,7 @@ function ArticleDetail() {
     return (
       <div className="article-container">
         <div className="article-content">
-          <img className="article-image" src={`https://apparticleimages.s3.us-east-2.amazonaws.com/101.jpg`} alt={article.title} />
+          <img className="article-image" src={`https://apparticleimages.s3.us-east-2.amazonaws.com/${articleId}.jpg`} alt={article.title} />
           <div className="article-details">
             <h1>{article.title}</h1>
             <p className="published-date">Published on {formattedDate}</p>
