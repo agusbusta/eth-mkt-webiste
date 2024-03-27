@@ -1,5 +1,5 @@
 import React from "react";
-import ethereum from "../assets/ethereum.png";
+import bitcoin from "../assets/bitcoin.png";
 import layer0 from "../assets/layer0.png";
 import layer1 from "../assets/layer1.png";
 
@@ -14,17 +14,17 @@ function MoreNews() {
         <ul className="website-list">
           <div className="website-group">
             <li className="website-li">
-              <a href="#">
+              <a href="https://btc-mkt-website.vercel.app">
                 <img
-                  src={ethereum}
+                  src={bitcoin}
                   className="otherwebsiteimg"
-                  alt="Ethereum"
+                  alt="bitcoin"
                 />
                 <p className="textCardMoreWebsites">Bitcoin</p>
               </a>
             </li>
             <li className="website-li">
-              <a href="#">
+              <a href="https://layer0-mkt-website.vercel.app">
                 <img src={layer0} className="otherwebsiteimg" alt="Layer 0" />
                 <p className="textCardMoreWebsites"> Layer 0</p>
               </a>
@@ -32,8 +32,8 @@ function MoreNews() {
           </div>
           <div className="website-entire">
             <li className="website-li layer1div">
-              <a href="#">
-                <img src={layer1} className="layer1logo" alt="Layer 1 (LMC)" />
+              <a href="https://layer1-mkt-webiste.vercel.app">
+                <img src={layer1} className="layer1logo" alt="Layer 1" />
                 <p className="textCardMoreWebsites">Layer 1</p>
               </a>
             </li>
