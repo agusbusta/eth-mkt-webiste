@@ -15,7 +15,7 @@ function TopStoryItem() {
 
   const fetchLatestNews = () => {
     setLoading(true);
-    fetch(`https://aialpha.ngrok.io/api/get/latest_news?coin_bot_id=2&limit=1`)
+    fetch(`https://aialpha.ngrok.io/api/get/latest_news?coin_bot_id=1&limit=1`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch the latest news");
@@ -45,10 +45,10 @@ function TopStoryItem() {
           }}
         >
           <div
-            className="topStory-item"
+            className="topStory-image"
             style={{
               backgroundImage: topStory
-                ? `url(https://apparticleimages.s3.us-east-2.amazonaws.com/${topStory.article_id}.jpg)`
+                ? `url(https://mktnewsposters.s3.us-east-2.amazonaws.com/${topStory.article_id}.jpg)`
                 : "",
             }}
           >
